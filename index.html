@@ -16,7 +16,212 @@
             align-items: center;
             justify-content: center;
         }
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Article</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        #header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #ff6600;
+            margin-top: 0px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 20px;
+            color: #ff6600;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .float-image {
+            float: right;
+            margin: 0 0 10px 10px;
+            width: 25%;
+            /* Adjust margins as needed for positioning */
+        }
+
+        .text-container {
+            overflow: hidden;
+            /* Clear the float for the text container */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>QR Codes</h1>
+        <h2 style="color:#2c2c2c">How likely are people willing to give personal information away?</h2>
+    </div>
+    <div id="content">
+        <h3>MSIS 4233- Expo: Baden Erb</h3><br>
+        <h3>The Set Up</h3>
+
+        <h2>Section 1: What is a QR Code</h2>
+        <p>A QR Code (Quick Response Code) is a two-dimensional barcode that can store various types of data, such as
+            text, URLs, contact information, and more. It was originally created for tracking parts in the automotive
+            industry but has since found widespread use in various applications, including marketing, ticketing, and
+            product labeling.</p>
+
+        <h2>Section 2: Canary Tokens</h2>
+        <div class="text-container">
+            <p>Canary Tokens are a form of digital security measures used to detect unauthorized access or breaches in
+                an<img src="./canary.png" alt="Canary Token" class="float-image">
+                organization's network or systems. They are essentially pieces of information or files that are
+                intentionally placed in sensitive areas of a network to act as early warning indicators.</p>
+            <p>These tokens are designed to look like genuine, enticing targets for cyber attackers, and when they are
+                accessed, they trigger an alert that indicates a potential security breach. Canary Tokens can take
+                various
+                forms, including decoy files, fake login credentials, or QR Codes embedded in documents or websites.</p>
+
+            <p>The use of canary tokens in this case are the redirects used to capture the IP address of the scanner,
+                the OS of the scanner, and the Machine the user is scanning with.</p>
+        </div>
+        <h2>Section 3: Forms</h2>
+        <div class="text-container">
+            <p>In this section, we'll discuss the Microsoft Form created for Oklahoma State University (OSU) Dining
+                Services. This form is designed to collect data to assess how likely individuals are willing to give
+                away personal information.</p>
+            <p>The form includes various questions and scenarios to gauge respondents' willingness to provide
+                information. It can be a valuable tool for understanding user behaviors and attitudes towards data
+                sharing in a dining services context.</p>
+            <p>I put "Anti-AI" questions at the end that can gauge how much information a user would give away.</p>
+        </div>
+        <h2>The Form:</h2>
+        <iframe src="https://forms.office.com/r/QfFCmH26i7" width="600" height="400" frameborder="0" marginheight="0"
+            marginwidth="0">Loading...</iframe>
+        <h2>Section 4: The Flyers</h2>
+        <div class="text-container">
+            <img src="./bb3.jpg" alt="Flyer with QR Code" class="float-image">
+            <p>In this section, we'll delve into how I utilized flyers with QR Codes to engage with the Oklahoma State
+                Dining Services community and gather valuable feedback.</p>
+            <p>The flyers were designed to encourage diners to participate in a survey aimed at improving the dining
+                experience. Each flyer prominently featured a QR Code, such as the one shown below:</p>
+
+            <p>Scanning this QR Code redirected individuals to a survey where they could provide feedback on various
+                aspects of the dining services, including food quality, service, and overall satisfaction.</p>
+            <p>The flyers were also posted to advertise a gift card reward drawing as to encourage the user to have a
+                sense of urgency.</p>
+        </div>
+        <h2>Section 5: The Vulnerability, Social Engineering</h2>
+        <div class="text-container">
+            <p>Some of the potential vulnerability associated with the information obtained from
+                the QR Codes. It's crucial to understand that the data collected through QR Codes, if misused, can pose
+                risks to individuals' privacy and security.</p>
+            <p>One concerning aspect is that the information gathered, such as contact details or personally identifying
+                information, can provide
+                malicious actors with valuable clues for password guessing attempts. For example, if an attacker knows
+                your email address or phone number, they may use it to target your accounts.</p>
+            <p>It's essential to exercise caution when scanning QR Codes from unknown sources and to be mindful of the
+                information you share through these codes. </p>
+        </div>
+        <h2>Section 6: Threats</h2>
+        <div class="text-container">
+            <p>QR Codes, while incredibly useful, are not immune to potential threats and vulnerabilities. It's
+                essential to be aware of these risks to mitigate potential security issues when using or interacting
+                with QR Codes.</p>
+            <p>1. **Malicious Content:** QR Codes can be manipulated to lead users to malicious websites or download
+                harmful content, such as malware or phishing attacks.</p>
+            <p>2. **Privacy Invasion:** Scanning a QR Code can unknowingly share personal information with third
+                parties, potentially violating users' privacy.</p>
+            <p>3. **Data Theft:** QR Codes may contain sensitive data, and if intercepted, this information can be
+                stolen and used for fraudulent purposes.</p>
+            <p>4. **Password Guessing:** As mentioned in the previous section, QR Code data can be used to guess
+                passwords, especially if the information shared includes identifiable details like email addresses or
+                usernames.</p>
+            <p>5. **Location Tracking:** Some QR Code campaigns may collect users' location data without their consent,
+                potentially enabling tracking or profiling.</p>
+            <p>6. **Phishing Attacks:** QR Codes can be used in phishing schemes to trick users into revealing sensitive
+                information, such as login credentials or financial details.</p>
+            <p>Understanding these threats and taking precautions when scanning QR Codes can help users navigate this
+                technology safely and securely.</p>
+        </div>
+        <h2>Section 7: Risk Exposures</h2>
+        <div class="text-container">
+            <p>QR Codes have become an integral part of modern life, providing convenience and efficiency. However, it's
+                essential to acknowledge the potential risk exposures that come with their widespread use.</p>
+            <p>1. **Cybersecurity Risks:** Scanning QR Codes may expose individuals to cybersecurity risks, such as
+                malware infections, phishing attacks, and malicious content downloads.</p>
+            <p>2. **Privacy Concerns:** The data shared through QR Codes can raise privacy concerns, particularly when
+                individuals unknowingly provide personal information to unknown parties.</p>
+            <p>3. **Data Integrity:** There is a risk of the information contained in QR Codes being tampered with or
+                altered, potentially leading to misleading or fraudulent content.</p>
+            <p>4. **Counterfeit Codes:** Malicious actors can create counterfeit QR Codes, leading users to unauthorized
+                or harmful destinations, posing a significant risk.</p>
+            <p>Understanding these risk exposures is crucial to make informed decisions and take necessary precautions
+                when interacting with QR Codes in various contexts.</p>
+        </div>
+        <h2>Section 8: Controls</h2>
+        <div class="text-container">
+            <p>To address and minimize the risks associated with the use of QR Codes, various controls and measures can
+                be implemented to enhance security and privacy. Here are some essential controls:</p>
+            <p>1. **QR Code Validation:** Implement a system to validate QR Codes before scanning to ensure their
+                authenticity and integrity, reducing the risk of counterfeit codes.</p>
+            <p>2. **Security Software:** Use security software and antivirus tools on your devices to detect and
+                mitigate potential malware threats when scanning QR Codes.</p>
+            <p>3. **User Education:** Educate users on the potential risks and best practices when scanning QR Codes,
+                emphasizing the importance of privacy and security.</p>
+            <p>4. **Data Encryption:** Utilize secure data transmission and encryption techniques for QR Code content,
+                protecting sensitive information.</p>
+            <p>5. **Privacy Policies:** Develop and follow privacy policies for handling QR Code data and ensure
+                compliance with data protection regulations.</p>
+            <p>6. **Regular Auditing:** Periodically audit and assess the security of QR Code systems to identify and
+                address vulnerabilities.</p>
+            <p>By implementing these controls, organizations and individuals can enhance their QR Code security and
+                minimize exposure to potential risks.</p>
+        </div>
+    </div>
+</body>
+
+</html>
         .container {
             max-width: 400px;
             padding: 25px;
